@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://b7070gfoko4mo"]
 
 [ext_resource type="Texture2D" uid="uid://dh0t42ubhuv0" path="res://sprites/hit.png" id="1_mdfft"]
-[ext_resource type="Script" uid="uid://bwkexrmt718dx" path="res://objects/impact.gd" id="2_k826h"]
+[ext_resource type="Script" uid="uid://1na2ito2ukgt" path="res://objects/Impact.cs" id="2_15nnu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8c04i"]
 atlas = ExtResource("1_mdfft")
@@ -46,6 +46,6 @@ double_sided = false
 no_depth_test = true
 sprite_frames = SubResource("SpriteFrames_nwydm")
 animation = &"shot"
-script = ExtResource("2_k826h")
+script = ExtResource("2_15nnu")
 
 [connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
